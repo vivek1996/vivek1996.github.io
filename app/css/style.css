@@ -1,3 +1,7 @@
 body {
   background: #333;
   color: #fff; }
+
+img {
+  width: 100%;
+  height: auto; }
