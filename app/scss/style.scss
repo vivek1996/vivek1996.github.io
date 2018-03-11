@@ -1,6 +1,9 @@
+$darkcol:#222831;
+$lightcol:#393E46;
+$blue: #00ADB5;
 
 body{
-    background: #333;
+    background: $darkcol;
     color: #fff;
 
 }
@@ -9,3 +12,10 @@ img{
     height: auto;
 }
 
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

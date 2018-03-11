@@ -1,7 +1,13 @@
 body {
-  background: #333;
+  background: #222831;
   color: #fff; }
 
 img {
   width: 100%;
   height: auto; }
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
