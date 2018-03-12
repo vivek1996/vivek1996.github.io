@@ -3,8 +3,37 @@ html {
   color: #393E46;
   box-sizing: border-box;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 img {
   width: 100%;
   height: auto; }
+
+.container {
+  width: 90vw;
+  margin: 0 auto; }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap; }
+  .flex-row {
+    flex-direction: row;
+    justify-content: space-around; }
+
+.nav-items {
+  list-style: none; }
+  .nav-items a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none; }
+    .nav-items a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #000;
+      transition: width .3s; }
+    .nav-items a:hover::after {
+      width: 100%; }
