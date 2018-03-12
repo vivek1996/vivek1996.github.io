@@ -1,17 +1,25 @@
 $darkcol: #222831;
 $lightcol: #393e46;
 $blue: #00adb5;
+$pink:#FF2E63;
+$lightgrey:#EAEAEA;
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 html {
-  color: $lightcol;
+  color: $darkcol;
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: all .4s linear ;
 }
 body {
   display: none;
+  background: #00d2ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
 .fontawesome-i2svg-active body {
@@ -47,18 +55,20 @@ hr {
     align-items: center;
   }
 }
+
 .nav-items {
   list-style: none;
+  text-transform: uppercase;
   a {
     display: inline-block;
-    color: #000;
+    color: $darkcol;
     text-decoration: none;
     &::after {
       content: "";
       display: block;
       width: 0;
       height: 2px;
-      background: #000;
+      background: $lightgrey;
       transition: width 0.3s;
     }
     &:hover::after {
@@ -67,6 +77,33 @@ hr {
   }
 }
 
+.home{
+    &-name{
+        font-weight: 900;
+    }
+    &-desc{
+        
+        font-weight: 500;
+    }
+    &-btn{
+        border: 1px solid $darkcol;
+        text-decoration: none;
+        color: $darkcol;
+        font-weight: 900;
+       padding: .7em 1.5em;
+       border-radius: 100px;
+       box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.24);  
+    }
+}
+.about{
+    &-title{
+        text-align: center;
+    }
+    &-desc{
+        font-size: 1.2rem;
+        font-family: 'Roboto Slab', serif;
+    }
+}
 .card {
   background: #fff;
   border-radius: 10px;
@@ -85,7 +122,7 @@ hr {
 }
 
 footer {
-  background: $darkcol;
+  background: #252A34;
   padding: 70px 0 50px 0;
   position: relative;
 }
