@@ -88,13 +88,14 @@ footer {
     color: #00adb5; }
 
 .contact {
-  list-style: none;
-  color: #3b5998; }
-  .contact :nth-child(2) {
+  list-style: none; }
+  .contact .fb {
+    color: #3b5998; }
+  .contact .git {
     color: #4078c0; }
-  .contact :nth-child(3) {
+  .contact .gplus {
     color: #dd4b39; }
-  .contact :nth-child(4) {
+  .contact .twitter {
     color: #1da1f2; }
-  .contact :nth-child(5) {
+  .contact .linkedin {
     color: #0077b5; }
