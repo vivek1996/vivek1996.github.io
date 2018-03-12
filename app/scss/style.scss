@@ -4,7 +4,7 @@ $blue: #00adb5;
 $pink:#FF2E63;
 $lightgrey:#EAEAEA;
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900");
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
 html {
   color: $darkcol;
   box-sizing: border-box;
@@ -59,6 +59,8 @@ hr {
 .nav-items {
   list-style: none;
   text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   a {
     display: inline-block;
     color: $darkcol;
@@ -68,7 +70,7 @@ hr {
       display: block;
       width: 0;
       height: 2px;
-      background: $lightgrey;
+      background: $lightcol;
       transition: width 0.3s;
     }
     &:hover::after {
@@ -96,12 +98,14 @@ hr {
     }
 }
 .about{
+    font-family: 'Roboto Slab', serif;
     &-title{
+        font-weight: 700;
         text-align: center;
     }
     &-desc{
         font-size: 1.2rem;
-        font-family: 'Roboto Slab', serif;
+        
     }
 }
 .card {
