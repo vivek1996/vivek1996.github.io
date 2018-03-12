@@ -21,6 +21,10 @@ img {
   .flex-row {
     flex-direction: row;
     justify-content: space-around; }
+  .flex-col {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
 
 .nav-items {
   list-style: none; }

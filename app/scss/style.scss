@@ -26,6 +26,11 @@ img{
         flex-direction: row;
         justify-content: space-around;
     }
+    &-col{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .nav-items{
     list-style: none;
