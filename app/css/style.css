@@ -1,39 +1,10 @@
-body {
-  background: #393E46;
-  color: #fff;
-  box-sizing: border-box; }
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900");
+html {
+  color: #393E46;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400; }
 
 img {
   width: 100%;
   height: auto; }
-
-.nav-container {
-  position: fixed;
-  background: #222831;
-  width: 100%; }
-
-.nav-items {
-  padding: .2em  .7em;
-  list-style: none;
-  border-radius: 0.5em; }
-  .nav-items a {
-    text-decoration: none;
-    color: #00ADB5;
-    align-content: space-between; }
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .flex-row {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    flex-direction: row;
-    align-content: center;
-    flex-basis: 20px; }
-
-.home {
-  height: 100vh; }
