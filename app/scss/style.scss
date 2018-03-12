@@ -89,12 +89,17 @@ hr {
     }
     &-btn{
         border: 1px solid $darkcol;
+        
         text-decoration: none;
         color: $darkcol;
         font-weight: 900;
        padding: .7em 1.5em;
        border-radius: 100px;
        box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.24);  
+       &:hover{
+            background-color: lighten($color:#3a7bd5, $amount:5);
+           box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+       }
     }
 }
 .about{
