@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+* {
+  margin: 0;
+  padding: 0; }
+
 html {
-  color: #222831;
+  color: #fcf9f9;
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
@@ -11,11 +15,11 @@ html {
 
 body {
   display: none;
-  background: #00d2ff;
+  background: #141E30;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #3a7bd5, #00d2ff);
+  background: linear-gradient(to right, #243B55, #141E30);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 .fontawesome-i2svg-active body {
@@ -49,6 +53,15 @@ hr {
     justify-content: center;
     align-items: center; }
 
+header {
+  background: linear-gradient(to right, rgba(36, 59, 85, 0.705), rgba(20, 30, 48, 0.698)), url("../img/header_bac.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 95vh; }
+
+.nav {
+  padding: 1em; }
+
 .nav-items {
   list-style: none;
   text-transform: uppercase;
@@ -56,14 +69,14 @@ hr {
   font-weight: 700; }
   .nav-items a {
     display: inline-block;
-    color: #222831;
+    color: #EAEAEA;
     text-decoration: none; }
     .nav-items a::after {
       content: "";
       display: block;
       width: 0;
       height: 2px;
-      background: #393e46;
+      background: #FF2E63;
       transition: width 0.3s; }
     .nav-items a:hover::after {
       width: 100%; }
@@ -77,7 +90,7 @@ hr {
 .home-btn {
   border: 1px solid #222831;
   text-decoration: none;
-  color: #222831;
+  color: #EAEAEA;
   font-weight: 900;
   padding: .7em 1.5em;
   border-radius: 100px;
@@ -95,7 +108,7 @@ hr {
     font-size: 1.2rem; }
 
 .card {
-  background: #fff;
+  background: #39597e;
   border-radius: 10px;
   display: inline-block;
   height: 300px;
