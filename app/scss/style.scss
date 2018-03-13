@@ -102,7 +102,12 @@ header{
 }
 
 .home{
-
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ width: 100%;
+  
     &-name{
         font-weight: 900;
     }
@@ -112,7 +117,7 @@ header{
     }
     &-btn{
         border: 1px solid $darkcol;
-        
+        margin-top: 2em;
         text-decoration: none;
         color: $lightgrey;
         font-weight: 900;
