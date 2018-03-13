@@ -102,12 +102,13 @@ header{
 }
 
 .home{
+
     &-name{
         font-weight: 900;
     }
     &-desc{
         
-        font-weight: 500;
+        font-weight: 400;
     }
     &-btn{
         border: 1px solid $darkcol;
