@@ -101,15 +101,26 @@ header {
     border-radius: 100px;
     box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.24); }
     .home-btn:hover {
-      background-color: #4f89d9;
+      background-color: #3a7bd5;
       box-shadow: 0 0 0 transparent; }
 
+.about-bac {
+  background: linear-gradient(to right, rgba(36, 59, 85, 0.705), rgba(20, 30, 48, 0.698)), url("../img/about_bac.jpg");
+  width: 100%;
+  background-position: center;
+  background-size: cover; }
+
 .about {
+  height: 95vh;
   font-family: 'Roboto Slab', serif; }
   .about-title {
-    font-weight: 700;
-    text-align: center; }
+    font-weight: 900;
+    text-align: center;
+    font-size: 3rem;
+    color: #00adb5;
+    padding: 1em; }
   .about-desc {
+    margin: 2em 0;
     font-size: 1.2rem; }
 
 .card {

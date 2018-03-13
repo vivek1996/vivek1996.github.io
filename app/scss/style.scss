@@ -94,6 +94,7 @@ header{
       height: 2px;
       background: $pink;
       transition: width 0.3s;
+      
     }
     &:hover::after {
       width: 100%;
@@ -125,19 +126,31 @@ header{
        border-radius: 100px;
        box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.24);  
        &:hover{
-            background-color: lighten($color:#3a7bd5, $amount:5);
+            background-color:#3a7bd5; //lighten($color:#3a7bd5, $amount:5);
            box-shadow: 0 0 0 rgba(0, 0, 0, 0);
        }
     }
 }
+.about-bac{
+  background:linear-gradient(to right, rgba(36, 59, 85, 0.705), rgba(20, 30, 48, 0.698)), url('../img/about_bac.jpg');
+    width:100%;
+    background-position: center;
+    background-size: cover;
+}
 .about{
-
+    height: 95vh;
+    
     font-family: 'Roboto Slab', serif;
     &-title{
-        font-weight: 700;
+        font-weight: 900;
         text-align: center;
+        // color: #219fa0;
+        font-size: 3rem;
+        color: $blue;
+        padding: 1em;
     }
     &-desc{
+        margin: 2em 0;
         font-size: 1.2rem;
         
     }
