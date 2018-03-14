@@ -165,7 +165,7 @@ header{
         text-align: center;
         font-size: 3rem;
         color: $blue;
-        padding: .5em;
+        padding: .3em;
 }
 .card {
   background: rgb(57, 89, 126);
@@ -186,6 +186,19 @@ header{
     //position: relative;
     border-top: 1px solid rgba(160,160,160,0.2);
     padding: .8em;
+    
+    text-align: right;
+    a{
+      font-family:'Roboto Slab', serif;
+      text-transform: capitalize;
+      color: $pink;
+      text-decoration:none;
+      opacity: .9;
+     &::after{
+       content: " >>";
+     }
+
+    }
   }
   &-desc{
     padding: .2em;

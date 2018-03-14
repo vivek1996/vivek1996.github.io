@@ -129,7 +129,7 @@ header {
   text-align: center;
   font-size: 3rem;
   color: #00adb5;
-  padding: .5em; }
+  padding: .3em; }
 
 .card {
   background: #39597e;
@@ -146,7 +146,16 @@ header {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
   .card-footer {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
-    padding: .8em; }
+    padding: .8em;
+    text-align: right; }
+    .card-footer a {
+      font-family: 'Roboto Slab', serif;
+      text-transform: capitalize;
+      color: #FF2E63;
+      text-decoration: none;
+      opacity: .9; }
+      .card-footer a::after {
+        content: " >>"; }
   .card-desc {
     padding: .2em; }
 
