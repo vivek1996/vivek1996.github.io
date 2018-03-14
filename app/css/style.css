@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Mina");
 * {
   margin: 0;
   padding: 0; }
@@ -7,11 +7,10 @@
 html {
   color: #fcf9f9;
   box-sizing: border-box;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
+  font-family: 'Mina', sans-serif;
+  font-weight: 200;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: all .4s linear; }
+  -moz-osx-font-smoothing: grayscale; }
 
 body {
   display: none;
@@ -67,7 +66,7 @@ header {
   list-style: none;
   text-transform: uppercase;
   font-family: 'Roboto Slab', serif;
-  font-weight: 700; }
+  font-weight: 300; }
   .nav-items a {
     display: inline-block;
     color: #EAEAEA;
@@ -112,10 +111,10 @@ header {
   background-size: cover; }
 
 .about {
-  height: 95vh;
-  font-family: 'Roboto Slab', serif; }
+  height: 95vh; }
   .about-title {
-    font-weight: 900;
+    font-weight: 500;
+    font-family: 'Roboto Slab', serif;
     text-align: center;
     font-size: 3rem;
     color: #00adb5;
@@ -123,6 +122,14 @@ header {
   .about-desc {
     margin: 2em 0;
     font-size: 1.2rem; }
+
+.portfolio-title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 3rem;
+  color: #00adb5;
+  padding: .5em; }
 
 .card {
   background: #39597e;
@@ -140,11 +147,18 @@ header {
   .card-footer {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding: .8em; }
+  .card-desc {
+    padding: .2em; }
 
 footer {
   background: #252A34;
   padding: 70px 0 50px 0;
   position: relative; }
+
+.footer-content {
+  margin-top: 2em;
+  text-align: center;
+  color: #6a7471; }
 
 .top-icon {
   position: absolute;

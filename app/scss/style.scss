@@ -4,8 +4,9 @@ $blue: #00adb5;
 $pink:#FF2E63;
 $lightgrey:#EAEAEA;
 
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900");
+//@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900");
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Mina');
 * {
   margin: 0;
  padding: 0;
@@ -18,11 +19,12 @@ $lightgrey:#EAEAEA;
 html {
   color: rgb(252, 249, 249);
   box-sizing: border-box;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
+  //font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Mina', sans-serif;
+  font-weight: 200;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transition: all .4s linear ;
+  //transition: all .4s linear ;
 }
 body {
   display: none;
@@ -83,7 +85,7 @@ header{
   list-style: none;
   text-transform: uppercase;
   font-family: 'Roboto Slab', serif;
-  font-weight: 700;
+  font-weight: 300;
   a {
     display: inline-block;
     color: $lightgrey;
@@ -141,9 +143,10 @@ header{
 .about{
     height: 95vh;
     
-    font-family: 'Roboto Slab', serif;
+    //font-family: 'Roboto Slab', serif;
     &-title{
-        font-weight: 900;
+        font-weight: 500;
+        font-family:'Roboto Slab', serif; 
         text-align: center;
         // color: #219fa0;
         font-size: 3rem;
@@ -155,6 +158,14 @@ header{
         font-size: 1.2rem;
         
     }
+}
+.portfolio-title{
+  font-family: 'Roboto Slab', serif;
+        font-weight:500;
+        text-align: center;
+        font-size: 3rem;
+        color: $blue;
+        padding: .5em;
 }
 .card {
   background: rgb(57, 89, 126);
@@ -176,12 +187,21 @@ header{
     border-top: 1px solid rgba(160,160,160,0.2);
     padding: .8em;
   }
+  &-desc{
+    padding: .2em;
+  }
 }
 
 footer {
   background: #252A34;
   padding: 70px 0 50px 0;
   position: relative;
+  
+}
+.footer-content{
+ margin-top: 2em;
+  text-align: center;
+  color: rgb(106, 116, 113);
 }
 .top-icon {
   position: absolute;
