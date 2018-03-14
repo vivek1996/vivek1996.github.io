@@ -54,7 +54,8 @@ img {
 hr {
   border-color: $lightcol;
   border-width: 0.5px;
-  opacity: 0.4;
+   opacity: 0.4;
+   margin: .2em;
 }
 .flex {
   display: flex;
@@ -170,6 +171,11 @@ header{
   &:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
+  &-footer{
+    //position: relative;
+    border-top: 1px solid rgba(160,160,160,0.2);
+    padding: .8em;
+  }
 }
 
 footer {
@@ -191,10 +197,13 @@ footer {
 }
 .contact{
     list-style: none;
+    
     .fb{
+      
         color: #3b5998;
     }
     .git{
+      
         color:  #4078c0;
     }
     .gplus{
