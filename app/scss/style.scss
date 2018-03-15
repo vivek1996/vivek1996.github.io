@@ -191,9 +191,9 @@ header{
     a{
       font-family:'Roboto Slab', serif;
       text-transform: capitalize;
-      color: $pink;
+      color: $blue;
       text-decoration:none;
-      opacity: .9;
+      
      &::after{
        content: " >>";
      }

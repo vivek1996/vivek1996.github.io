@@ -151,9 +151,8 @@ header {
     .card-footer a {
       font-family: 'Roboto Slab', serif;
       text-transform: capitalize;
-      color: #FF2E63;
-      text-decoration: none;
-      opacity: .9; }
+      color: #00adb5;
+      text-decoration: none; }
       .card-footer a::after {
         content: " >>"; }
   .card-desc {
