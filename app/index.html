@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" >
+    <meta name="theme-color" content="#1c2735">
+    <script src="https://rawgit.com/tuupola/jquery_lazyload/2.x/lazyload.js"></script>
 </head>
 
 <body>
+        <div class="se-pre-con"></div>
     <header id="home">
         <nav class="nav">
             <ul class="nav-container flex flex-row">
@@ -58,7 +61,7 @@
         <div class="flex flex-row">
             <div class="card card-hover">
                 <div class="card-img">
-                    <img src="./img/tafeta.JPG" alt="">
+                    <img class="lazyload" data-src="./img/tafeta.JPG" alt="">
                 </div>
                 <div class="card-title">Tafeta</div>
                 <div class="card-desc">
@@ -70,7 +73,7 @@
             </div>
             <div class="card card-hover">
                 <div class="card-img">
-                    <img src="./img/camcannons.JPG" alt="">
+                    <img class="lazyload" data-src="./img/camcannons.JPG" alt="">
                 </div>
                 <div class="card-title">CamCannons</div>
                 <div class="card-desc">
@@ -82,7 +85,7 @@
             </div>
             <div class="card card-hover">
                 <div class="card-img">
-                    <img src="./img/weather1.JPG" alt="">
+                    <img class="lazyload" data-src="./img/weather1.JPG" alt="">
                 </div>
                 <div class="card-title">Weather Report</div>
                 
@@ -97,7 +100,7 @@
 
             <div class="card card-hover">
                 <div class="card-img">
-                    <img src="./img/git.JPG" alt="">
+                    <img class="lazyload" data-src="./img/git.JPG" alt="">
                 </div>
                 <div class="card-title">GitHub User Finder</div>
                 <div class="card-desc">
@@ -109,7 +112,7 @@
             </div>
             <div class="card card-hover">
                 <div class="card-img">
-                    <img src="./img/weather2.JPG" alt="">
+                    <img class="lazyload" data-src="./img/weather2.JPG" alt="">
                 </div>
                 <div class="card-title">Weather Report</div>
                 <div class="card-desc">
@@ -122,7 +125,7 @@
             </div>
             <div class="card card-hover">
                 <div class="card-img">
-                    <img src="./img/bharathi.JPG" alt="">
+                    <img class="lazyload" data-src="./img/bharathi.JPG" alt="">
                 </div>
                 <div class="card-title">Tribute Page for Bharathi</div>
                 <div class="card-desc">
@@ -178,6 +181,13 @@
             </p>
         </div>
     </footer>
+    <!-- <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script> -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> -->
+   <script src="./js/main.js"></script>
 </body>
 
 </html>
