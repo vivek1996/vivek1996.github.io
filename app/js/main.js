@@ -1,5 +1,5 @@
 $(window).load(function() {
     
-    $(".se-pre-con").fadeOut("slow");;
+    $(".se-pre-con").fadeOut("slow");
 });
 lazyload();
