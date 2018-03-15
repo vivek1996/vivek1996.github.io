@@ -61,7 +61,9 @@ hr {
   flex-wrap: wrap; }
   .flex-row {
     flex-direction: row;
-    justify-content: space-around; }
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center; }
   .flex-col {
     flex-direction: column;
     justify-content: center;

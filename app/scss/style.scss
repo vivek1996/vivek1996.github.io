@@ -76,6 +76,8 @@ hr {
   &-row {
     flex-direction: row;
     justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
   }
   &-col {
     flex-direction: column;
@@ -182,7 +184,7 @@ header{
   background: rgb(28, 39, 53);
   border-radius: 10px;
   display: inline-block;
-  //height: 350px;
+ // height: 350px;
   margin: 0.5rem 0 1rem 0;
   position: relative;
   width: 300px;
@@ -223,8 +225,9 @@ header{
     background: $blue;
     opacity: .7;
     width: 100%;
-    height: auto;
+   height: auto;
   }
+  
 }
 
 footer {
