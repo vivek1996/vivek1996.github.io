@@ -132,10 +132,9 @@ header {
   padding: .3em; }
 
 .card {
-  background: #39597e;
+  background: #1c2735;
   border-radius: 10px;
   display: inline-block;
-  height: 300px;
   margin: 0.5rem 0 1rem 0;
   position: relative;
   width: 300px; }
@@ -145,18 +144,25 @@ header {
   .card:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
   .card-footer {
+    position: relative;
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding: .8em;
     text-align: right; }
     .card-footer a {
       font-family: 'Roboto Slab', serif;
-      text-transform: capitalize;
+      text-transform: uppercase;
       color: #00adb5;
       text-decoration: none; }
-      .card-footer a::after {
-        content: " >>"; }
   .card-desc {
     padding: .2em; }
+  .card-title {
+    padding: .5em;
+    color: #00adb5; }
+    .card-title::after {
+      content: " :"; }
+  .card-img {
+    width: 100%;
+    height: auto; }
 
 footer {
   background: #252A34;

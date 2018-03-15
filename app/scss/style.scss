@@ -168,10 +168,10 @@ header{
         padding: .3em;
 }
 .card {
-  background: rgb(57, 89, 126);
+  background: rgb(28, 39, 53);
   border-radius: 10px;
   display: inline-block;
-  height: 300px;
+  //height: 350px;
   margin: 0.5rem 0 1rem 0;
   position: relative;
   width: 300px;
@@ -183,25 +183,34 @@ header{
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
   &-footer{
-    //position: relative;
+    position: relative;
     border-top: 1px solid rgba(160,160,160,0.2);
     padding: .8em;
-    
+    //bottom: 0;
     text-align: right;
     a{
+      //position: absolute;
       font-family:'Roboto Slab', serif;
-      text-transform: capitalize;
+      text-transform: uppercase;
       color: $blue;
       text-decoration:none;
-      
-     &::after{
-       content: " >>";
-     }
+      //top: 2em;
 
     }
   }
   &-desc{
     padding: .2em;
+  }
+  &-title{
+    padding: .5em;
+    color: $blue;
+    &::after{
+      content: " :";
+    }
+  }
+  &-img{
+    width: 100%;
+    height: auto;
   }
 }
 
