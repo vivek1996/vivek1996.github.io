@@ -138,6 +138,11 @@ header {
   .about-desc {
     margin: 2em 0;
     font-size: 1.2rem; }
+  .about-icons {
+    margin-top: 5em;
+    list-style: none; }
+    .about-icons li {
+      font-size: 3rem; }
 
 .portfolio-title {
   font-family: 'Roboto Slab', serif;
