@@ -161,6 +161,8 @@ header {
     .card-title::after {
       content: " :"; }
   .card-img {
+    background: #00adb5;
+    opacity: .7;
     width: 100%;
     height: auto; }
 
