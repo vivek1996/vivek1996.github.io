@@ -9,15 +9,15 @@
   "author": "vivek",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^8.1.0",
-    "browser-sync": "^2.23.6",
+    "autoprefixer": "^8.3.0",
+    "browser-sync": "^2.23.7",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-cli": "^2.0.1",
-    "gulp-error-handle": "^1.0.0",
+    "gulp-error-handle": "^1.0.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-postcss": "^7.0.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.2.1"
   },
   "dependencies": {
     "gulp-htmlmin": "^4.0.0"
