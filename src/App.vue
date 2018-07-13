@@ -10,7 +10,7 @@
 
 <style lang="scss">
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -26,4 +26,15 @@
     }
   }
 }
+@import '~vue-material/dist/theme/engine'; // Import the theme engine
+
+@include md-register-theme(
+  'default',
+  (
+    primary: md-get-palette-color(blue, A200),
+    accent: md-get-palette-color(red, A200)
+  )
+);
+
+@import '~vue-material/dist/theme/all'; // Apply the theme
 </style>
