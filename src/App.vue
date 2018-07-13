@@ -1,12 +1,24 @@
 <template>
   <div id="app">
+      <!-- <header></header> -->
     <div id="nav">
+
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
+  <div class="footer">
+    <Footer></Footer>
   </div>
+
+  </div>
+
 </template>
+<script>
+
+export default {
+};
+</script>
 
 <style lang="scss">
 #app {
@@ -26,15 +38,9 @@
     }
   }
 }
-@import '~vue-material/dist/theme/engine'; // Import the theme engine
-
-@include md-register-theme(
-  'default',
-  (
-    primary: md-get-palette-color(blue, A200),
-    accent: md-get-palette-color(red, A200)
-  )
-);
-
-@import '~vue-material/dist/theme/all'; // Apply the theme
+@media (min-width: 600px) {
+  .footer {
+    display: none;
+  }
+}
 </style>
