@@ -25,13 +25,22 @@ Vue.use(Vuetify, {
     VToolbar,
     transitions
   },
+  // theme: {
+  //   primary: "#ee44aa",
+  //   secondary: "#424242",
+  //   accent: "#82B1FF",
+  //   error: "#FF5252",
+  //   info: "#2196F3",
+  //   success: "#4CAF50",
+  //   warning: "#FFC107"
+  // }
   theme: {
-    primary: "#ee44aa",
-    secondary: "#424242",
-    accent: "#82B1FF",
-    error: "#FF5252",
-    info: "#2196F3",
-    success: "#4CAF50",
-    warning: "#FFC107"
+    primary: "#3D5AFE",
+    secondary: "#3949AB",
+    accent: "#FF1744",
+    error: "#D50000",
+    warning: "#ffeb3b",
+    info: "#03A9F4",
+    success: "#4caf50"
   }
 });
