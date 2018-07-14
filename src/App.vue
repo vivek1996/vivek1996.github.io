@@ -77,3 +77,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.application {
+  font-family: 'Montserrat', sans-serif !important;
+}
+</style>
