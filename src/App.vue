@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app dark>
     <v-navigation-drawer
       persistent
       :mini-variant="miniVariant"
@@ -9,6 +9,7 @@
       absolute
       temporary
       app
+      dark
     >
       <v-list>
         <v-list-tile
@@ -18,10 +19,10 @@
           :to="item.link"
         >
           <v-list-tile-action>
-            <v-icon v-html="item.icon"></v-icon>
+            <v-icon class="pink--text" v-html="item.icon"></v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title v-text="item.title"></v-list-tile-title>
+            <v-list-tile-title class=" pink--text font-weight-bold" v-text="item.title"></v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
@@ -40,7 +41,16 @@
     </v-content>
 
     <v-footer app>
-      <span>&copy; 2017</span>
+       <v-flex
+        lighten-2
+        py-3
+        text-xs-center
+        white--text
+        xs12
+      >
+      With <v-icon class="pink--text" v-html="icons.favorite"></v-icon>
+        from Vivek M <v-icon class="pink--text" v-html="icons.face"></v-icon>
+      </v-flex>
     </v-footer>
   </v-app>
 </template>
@@ -70,9 +80,14 @@ export default {
       }
       ],
       miniVariant: false,
-      // right: true,
+      //  right: true,
       // rightDrawer: false,
-      title: 'Vivek'
+      title: 'Vivek',
+      clipped: true,
+      icons: {
+        favorite: "favorite",
+        face: "mood"
+      }
     }
   }
 }
@@ -81,5 +96,11 @@ export default {
 <style lang="scss">
 .application {
   font-family: 'Montserrat', sans-serif !important;
+}
+.v-list__tile--active .v-list__tile__action i {
+  color: white;
+}
+.v-list__tile--active {
+  background-color: rgb(223, 223, 223);
 }
 </style>
