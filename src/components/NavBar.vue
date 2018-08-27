@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <nav class="navbar is-dark">
+    <nav class="navbar is-black">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">Vivek
           <!-- <img src="http://bulma.io/images/bulma-logo.png" alt="Vivek"> -->
@@ -46,7 +46,7 @@ nav {
   }
 }
 .navbar-menu {
-  background-color: hsl(0, 0%, 21%);
+  background-color: hsl(0, 0%, 4%);
   a {
     color: white;
   }
