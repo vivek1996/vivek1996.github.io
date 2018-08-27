@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "NavBar",
   props: {
     msg: String
   },

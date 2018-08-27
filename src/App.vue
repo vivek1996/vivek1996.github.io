@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <HelloWorld />
-      <!-- <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> -->
+      <NavBar />
     </div>
     <router-view/>
   </div>
@@ -17,12 +15,12 @@
 </style>
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import NavBar from "@/components/NavBar.vue";
 
 export default {
   name: "home",
   components: {
-    HelloWorld
+    NavBar
   }
 };
 </script>
