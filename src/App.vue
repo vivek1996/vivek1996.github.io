@@ -24,6 +24,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*::selection {
+  background-color: hsl(49, 86%, 58%);
+  color: black;
+}
 // .page-enter-active, .page-leave-active {
 //   transition: opacity 1s, transform 1s;
 // }
@@ -71,7 +75,6 @@
   -webkit-animation-name: slideOutDown;
   animation-name: slideOutDown;
 }
-
 </style>
 <script>
 // @ is an alias to /src

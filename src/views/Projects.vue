@@ -2,7 +2,7 @@
   <div class="projects">
     <h1>This is an Projects page</h1>
     <div class="columns">
-  <div class="column is-4">
+  <div class="column">
     <div class="">
        <card
       :icon="'angle-right'"
@@ -12,7 +12,7 @@
     </card>
     </div>
   </div>
-  <div class="column is-4">
+  <div class="column">
     <div class="">
        <card
       :icon="'angle-left'"
@@ -22,7 +22,7 @@
     </card>
     </div>
   </div>
-   <div class="column is-4">
+   <div class="column">
     <div class="">
        <card
       :icon="'angle-left'"
@@ -32,7 +32,7 @@
     </card>
     </div>
   </div>
-   <div class="column is-4">
+   <div class="column">
     <div class=" ">
        <card
       :icon="'angle-left'"
@@ -42,7 +42,7 @@
     </card>
     </div>
   </div>
-   <div class="column is-4">
+   <div class="column ">
     <div class=" ">
        <card
       :icon="'angle-left'"

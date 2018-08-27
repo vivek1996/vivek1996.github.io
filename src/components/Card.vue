@@ -8,7 +8,7 @@
     :leave-active-class="leaveClass"
     @after-leave="afterLeave"
   >
-    <div class="card is-fullwidth">
+    <div class="card is-fullwidth" >
       <header class="card-header">
         <p class="card-header-title">{{ title }}</p>
         <a class="card-header-icon" v-if="!!this.icon">
@@ -56,3 +56,8 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+.card {
+  min-width: 10rem;
+}
+</style>
