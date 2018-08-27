@@ -1,8 +1,8 @@
 <template>
   <div class="projects">
     <h1>This is an Projects page</h1>
-    <div class="columns">
-  <div class="column">
+    <div class="row">
+  <div class="item">
     <div class="">
        <card
       :icon="'angle-right'"
@@ -12,7 +12,7 @@
     </card>
     </div>
   </div>
-  <div class="column">
+  <div class="item">
     <div class="">
        <card
       :icon="'angle-left'"
@@ -22,7 +22,7 @@
     </card>
     </div>
   </div>
-   <div class="column">
+   <div class="item">
     <div class="">
        <card
       :icon="'angle-left'"
@@ -32,7 +32,7 @@
     </card>
     </div>
   </div>
-   <div class="column">
+   <div class="item">
     <div class=" ">
        <card
       :icon="'angle-left'"
@@ -42,7 +42,7 @@
     </card>
     </div>
   </div>
-   <div class="column ">
+   <div class="item">
     <div class=" ">
        <card
       :icon="'angle-left'"
@@ -70,3 +70,20 @@ export default {
 }
 </script>
 
+<style lang="scss" scoped>
+.row {
+  min-height: 400px;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.item {
+  flex: 0 0 auto;
+  margin: 5px;
+}
+</style>
