@@ -13,9 +13,9 @@
       </div>
       <div class="navbar-menu " :class="{ 'is-active': showNav }">
         <div class="navbar-end is-dark">
-          <router-link class="navbar-item" to="/">Home</router-link>
-          <router-link class="navbar-item" to="/about">About</router-link>
-
+          <router-link class="navbar-item" to="/"><b-icon pack="fas" size="is-small" icon="home"></b-icon> Home</router-link>
+          <router-link class="navbar-item" to="/about"><b-icon pack="fas" icon="info-circle" size="is-small"></b-icon>About</router-link>
+          <router-link class="navbar-item" to="/projects"><b-icon pack="fas" icon="code" size="is-small"></b-icon>Projects</router-link>
         </div>
       </div>
     </nav>
@@ -44,5 +44,14 @@ nav {
       background-color: rgb(39, 39, 39);
     }
   }
+}
+.navbar-menu {
+  background-color: hsl(0, 0%, 21%);
+  a {
+    color: white;
+  }
+}
+.icon {
+  padding: 0 1.3rem;
 }
 </style>
