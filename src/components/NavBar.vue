@@ -25,9 +25,6 @@
 <script>
 export default {
   name: "NavBar",
-  props: {
-    msg: String
-  },
   data: function() {
     return {
       showNav: false
