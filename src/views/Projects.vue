@@ -1,12 +1,13 @@
 <template>
   <div class="projects">
     <h1 class=" has-text-centered has-text-warning is-size-1 " >Projects</h1>
-    <div class="row">
-  <div class="item">
+    <div class="row" v-if="projects">
+  <div class="item" v-for="project in projects">
        <card
-      :title="'Github'"
-      :content="'Welcome to Github'">
+      :title="project.title"
+      :content="project.desc">
     </card>
+    {{ project.title }}
   </div>
 </div>
   </div>
@@ -18,11 +19,15 @@ export default {
   components: {
     Card
   },
-  data: function() {
-    return {
+  // data: function() {
+  //   return {
+  //     projects: [],
+  //      baseUrl: "https://gist.githubusercontent.com/vivek1996/896077672d438b057cca20d52cf5ed42/raw/22eee4a7da43c841f13e26460dde0e8fc657b294/projects.json"
+  //   }
+  //  },
+  data: {
       projects: [],
-  baseUrl: "https://gist.githubusercontent.com/vivek1996/896077672d438b057cca20d52cf5ed42/raw/22eee4a7da43c841f13e26460dde0e8fc657b294/projects.json"
-    }
+       baseUrl: "https://gist.githubusercontent.com/vivek1996/896077672d438b057cca20d52cf5ed42/raw/22eee4a7da43c841f13e26460dde0e8fc657b294/projects.json"
    },
       created: function() {
                   this.getJson();
@@ -35,6 +40,7 @@ export default {
                 })
                 .then(function(myJson) {
                   console.log(myJson);
+                  this.projects = myJson;
                 });
               }
             }
