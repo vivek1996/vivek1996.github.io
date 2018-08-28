@@ -17,12 +17,14 @@ export default {
   },
   data: function () {
     return {
+      isFullPage: true,
       projects: [],
       baseUrl:
         "https://gist.githubusercontent.com/vivek1996/896077672d438b057cca20d52cf5ed42/raw/22eee4a7da43c841f13e26460dde0e8fc657b294/projects.json"
-    }
+    };
   },
   created: function () {
+    this.open();
     this.getJson();
   },
   methods: {
@@ -35,9 +37,15 @@ export default {
           // console.log(myJson);
           this.projects = myJson;
         });
+    },
+    open() {
+      const loadingComponent = this.$loading.open({
+        container: this.isFullPage ? null : this.$refs.element.$el
+      });
+      setTimeout(() => loadingComponent.close(), 3 * 1000);
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
