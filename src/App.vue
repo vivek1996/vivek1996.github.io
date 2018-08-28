@@ -3,7 +3,7 @@
     <div id="nav">
       <NavBar />
     </div>
-    <div class=" container is-fluid">
+    <div class=" container">
           <!-- <transition name="page" mode="out-in">
        <router-view/>
     </transition> -->
@@ -19,10 +19,13 @@
 
 <style lang="scss">
 #app {
-  background-color: hsl(0, 0%, 21%);
+  // background-color: hsl(0, 0%, 21%);
+  background: #232526;
+  background: linear-gradient(to right, #414345, #232526);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  //min-height: 85vh;
 }
 *::selection {
   background-color: hsl(49, 86%, 58%);
