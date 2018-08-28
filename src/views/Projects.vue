@@ -1,6 +1,7 @@
 <template>
   <div class="projects">
     <h1 class=" has-text-centered has-text-warning is-size-1 ">Projects</h1>
+    <b-loading :is-full-page="isFullPage" :active.sync="isLoading"></b-loading>
     <div class="row" v-if="projects">
       <div class="item" v-for="project in projects">
         <card :title="project.title" :content="project.desc">
@@ -17,6 +18,7 @@ export default {
   },
   data: function () {
     return {
+      isLoading: false,
       isFullPage: true,
       projects: [],
       baseUrl:
@@ -36,13 +38,14 @@ export default {
         .then(myJson => {
           // console.log(myJson);
           this.projects = myJson;
+          // this.isLoading = false;
         });
     },
     open() {
-      const loadingComponent = this.$loading.open({
-        container: this.isFullPage ? null : this.$refs.element.$el
-      });
-      setTimeout(() => loadingComponent.close(), 3 * 1000);
+      this.isLoading = true;
+      setTimeout(() => {
+        this.isLoading = false;
+      }, 2 * 1000);
     }
   }
 };
