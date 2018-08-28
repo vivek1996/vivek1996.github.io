@@ -5,7 +5,7 @@
     <div class="card card-cascade">
   <div class="view view-cascade gradient-card-header blue-gradient">
     <h2 class="card-header-title is-centered">{{ title }}</h2>
-    <p class="card-header-subtitle">Deserve for her own card</p>
+    <p class="card-header-subtitle"></p>
   </div>
   <div class="card-body card-body-cascade text-center">
     <p class="card-text">{{ content }}</p>

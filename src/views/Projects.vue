@@ -7,38 +7,32 @@
       :title="project.title"
       :content="project.desc">
     </card>
-    {{ project.title }}
   </div>
 </div>
   </div>
 </template>
 <script>
-import * as http from "http";
 import Card from "@/components/Card.vue";
 export default {
   components: {
     Card
   },
-  // data: function() {
-  //   return {
-  //     projects: [],
-  //      baseUrl: "https://gist.githubusercontent.com/vivek1996/896077672d438b057cca20d52cf5ed42/raw/22eee4a7da43c841f13e26460dde0e8fc657b294/projects.json"
-  //   }
-  //  },
-  data: {
-      projects: [],
+  data: function() {
+    return {
+      projects: [] ,
        baseUrl: "https://gist.githubusercontent.com/vivek1996/896077672d438b057cca20d52cf5ed42/raw/22eee4a7da43c841f13e26460dde0e8fc657b294/projects.json"
+    }
    },
-      created: function() {
+    created: function() {
                   this.getJson();
                 },
   methods: {
           getJson: function(){
             fetch(this.baseUrl)
-                .then(function(response) {
+                .then((response) => {
                   return response.json();
                 })
-                .then(function(myJson) {
+                .then((myJson) => {
                   console.log(myJson);
                   this.projects = myJson;
                 });
