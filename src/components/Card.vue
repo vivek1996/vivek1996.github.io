@@ -1,31 +1,29 @@
 <template>
-  <transition name="custom-classes-transition"
-    enter-active-class="animated slideInDown"
-    leave-active-class="animated slideOutDown">
+  <transition name="custom-classes-transition" enter-active-class="animated slideInDown" leave-active-class="animated slideOutDown">
     <div class="card card-cascade">
-  <div class="view view-cascade gradient-card-header blue-gradient">
-    <h2 class="card-header-title is-centered">{{ title }}</h2>
-    <p class="card-header-subtitle"></p>
-  </div>
-  <div class="card-body card-body-cascade text-center">
-    <p class="card-text">{{ content }}</p>
+      <div class="view view-cascade gradient-card-header blue-gradient">
+        <h2 class="card-header-title is-centered">{{ title }}</h2>
+        <p class="card-header-subtitle"></p>
+      </div>
+      <div class="card-body card-body-cascade text-center">
+        <p class="card-text">{{ content }}</p>
 
-    <hr>
-</div>
-</div>
+        <hr>
+      </div>
+    </div>
   </transition>
 </template>
 
 <script>
 export default {
-    name: "Card",
+  name: "Card",
   props: {
     title: {
       type: String
     },
     content: String
   }
-}
+};
 </script>
 <style lang="scss" scoped>
 h2 {

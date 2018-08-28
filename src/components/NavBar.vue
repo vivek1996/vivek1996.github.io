@@ -16,7 +16,7 @@
           <!-- <router-link class="navbar-item" to="/"> <b-icon pack="fas" size="is-small" icon="home"></b-icon> Home</router-link>
           <router-link class="navbar-item" to="/about"><b-icon pack="fas" icon="info-circle" size="is-small"></b-icon>About</router-link>
           <router-link class="navbar-item" to="/projects"><b-icon pack="fas" icon="code" size="is-small"></b-icon>Projects</router-link> -->
-           <router-link class="navbar-item has-text-weight-semibold" to="/"> Home</router-link>
+          <router-link class="navbar-item has-text-weight-semibold" to="/"> Home</router-link>
           <router-link class="navbar-item has-text-weight-semibold" to="/about">About</router-link>
           <router-link class="navbar-item has-text-weight-semibold" to="/projects">Projects</router-link>
         </div>
@@ -28,10 +28,10 @@
 <script>
 export default {
   name: "NavBar",
-  data: function() {
+  data: function () {
     return {
       showNav: false
-    }
+    };
   }
 };
 </script>

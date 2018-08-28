@@ -4,16 +4,14 @@
       <NavBar />
     </div>
     <div class=" container">
-          <!-- <transition name="page" mode="out-in">
+      <!-- <transition name="page" mode="out-in">
        <router-view/>
     </transition> -->
-      <transition name="custom-classes-transition"
-    enter-active-class="animated slideInDown"
-    leave-active-class="animated slideOutDown">
-       <router-view/>
-    </transition>
+      <transition name="custom-classes-transition" enter-active-class="animated slideInDown" leave-active-class="animated slideOutDown">
+        <router-view/>
+      </transition>
     </div>
-  <Footer />
+    <Footer />
   </div>
 </template>
 

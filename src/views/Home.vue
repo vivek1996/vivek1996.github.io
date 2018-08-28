@@ -1,20 +1,20 @@
 <template>
   <div class="home">
     <section class="hero is-fullheight is-dark">
-  <div class="hero-head">
+      <div class="hero-head">
 
-  </div>
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title">
-        Title
-      </h1>
-      <h2 class="subtitle">
-        Subtitle
-      </h2>
-    </div>
-  </div>
-</section>
+      </div>
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            Title
+          </h1>
+          <h2 class="subtitle">
+            Subtitle
+          </h2>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -23,8 +23,6 @@
 
 export default {
   name: "home",
-  components: {
-
-  }
+  components: {}
 };
 </script>
