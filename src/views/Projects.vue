@@ -32,6 +32,7 @@ export default {
   methods: {
     getJson: function () {
       fetch(this.baseUrl)
+        .then(this.handleErrors)
         .then(response => {
           return response.json();
         })
@@ -39,7 +40,14 @@ export default {
           // console.log(myJson);
           this.projects = myJson;
           // this.isLoading = false;
-        });
+        })
+        .catch(error => console.log(error));
+    },
+    handleErrors(response) {
+      if (!response.ok) {
+        throw Error(response.statusText);
+      }
+      return response;
     },
     open() {
       this.isLoading = true;
