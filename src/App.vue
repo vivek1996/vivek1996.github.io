@@ -46,36 +46,31 @@
 }
 @keyframes slideInDown {
   from {
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-    visibility: visible;
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
   }
 
   to {
-    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
     transform: translate3d(0, 0, 0);
   }
 }
 
 .slideInDown {
-  -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
 }
 @keyframes slideOutDown {
   from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 
   to {
-    visibility: hidden;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
   }
 }
 
 .slideOutDown {
-  -webkit-animation-name: slideOutDown;
   animation-name: slideOutDown;
 }
 </style>
