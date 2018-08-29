@@ -3,7 +3,7 @@
     <div class="content has-text-centered">
       <p class="has-text-warning">
         &copy; 2018 - With
-        <b-icon pack="fas" icon="heart" size="is-small" type="is-danger"></b-icon> from Vivek M
+        <b-icon pack="fas" icon="heart" size="is-small" type="is-danger"></b-icon> by Vivek M
       </p>
     </div>
   </footer>

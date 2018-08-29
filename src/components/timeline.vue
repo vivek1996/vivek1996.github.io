@@ -2,11 +2,12 @@
     <div class="timeline">
         <timeline timeline-theme="#ffdc00">
             <timeline-title>2018</timeline-title>
-            <timeline-item bg-color="#9dd8e0" font-color="#e166ab">Welcome to the new year!</timeline-item>
+            <timeline-item bg-color="#9dd8e0">Welcome to the new year!</timeline-item>
             <timeline-item bg-color="#e6b6b0" :hollow="true">My first 100 stars on Github 🎉</timeline-item>
             <timeline-item bg-color="#b0e6d1">keep going</timeline-item>
             <timeline-title bg-color="#f2d7e1">2017</timeline-title>
             <timeline-item bg-color="#ffdc00">
+                <i class="fas fa-heart" slot="others"></i>
                 <p>I wrote
                     <a href="https://github.com/luyilin/Aoba">Aoba</a>
                 </p>
@@ -17,6 +18,10 @@
                     <a href="https://github.com/luyilin/Maltose">Maltose</a>
                 </p>
                 <p class="append">A cute emoticon and emoji keyboard which can generate random emoticon or emoji and no xss.</p>
+            </timeline-item>
+            <timeline-title bg-color="#ffdc00">1996</timeline-title>
+            <timeline-item>
+                Born
             </timeline-item>
         </timeline>
     </div>
@@ -30,7 +35,14 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.timeline {
+.timeline p {
   color: white;
+}
+.timeline-title {
+  color: rgb(219, 20, 80) !important;
+  font-size: 2rem;
+}
+.timeline-item {
+  color: #edeeef !important;
 }
 </style>
