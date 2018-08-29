@@ -3,15 +3,15 @@
     <article class="media is-hoverable">
       <figure class="media-left">
         <p class="image is-64x64">
-          <img src="https://bulma.io/images/placeholders/128x128.png">
+          <img :src="avatar">
         </p>
       </figure>
       <div class="media-content">
         <div class="content">
           <div>
-            <strong class="has-text-warning">John Smith</strong>
+            <strong class="has-text-warning"> {{name}} </strong>
             <br>
-            <p class="is-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+            <p> {{desc}} </p>
           </div>
         </div>
         <nav class="level is-mobile">
@@ -55,8 +55,16 @@
 <script>
 import Time from "@/components/timeline.vue";
 export default {
+  data: function () {
+    return {
+      name: "Vivek M",
+      desc: "An Aspiring Web Developer",
+      avatar: "https://avatars0.githubusercontent.com/u/15796694"
+    };
+  },
   components: {
     Time
   }
 };
 </script>
+
