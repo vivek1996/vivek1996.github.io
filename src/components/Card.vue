@@ -7,8 +7,18 @@
       </div>
       <div class="card-body card-body-cascade text-center">
         <p class="card-text">{{ content }}</p>
-
+        <h5 class="card-text"> Technology Used :
+          <span v-for="(item, index) in tech"> {{ item }} {{ index == tech.length - 1?" ": "," }} </span>
+        </h5>
         <hr>
+        <a class="button is-warning mr-2" rel="noopener" target="blank" :href="url">
+          <b-icon pack="fab" size="is-small" icon="chrome"></b-icon>
+          <span class="ml-1">Visit Site</span>
+        </a>
+        <a class="button is-danger" rel="noopener" target="blank" :href="repo">
+          <b-icon pack="fab" size="is-small" icon="github"></b-icon>
+          <span class="ml-1">Visit Repo</span>
+        </a>
       </div>
     </div>
   </transition>
@@ -21,7 +31,10 @@ export default {
     title: {
       type: String
     },
-    content: String
+    content: String,
+    url: String,
+    repo: String,
+    tech: Array
   }
 };
 </script>
@@ -35,6 +48,9 @@ h2 {
 }
 h2 {
   font-size: 2rem;
+}
+h5 {
+  font-weight: 600 !important;
 }
 hr {
   margin-top: 1rem;
@@ -109,5 +125,11 @@ card.card-cascade .view.view-cascade.gradient-card-header {
   background: -webkit-linear-gradient(50deg, #45cafc, #303f9f) !important;
   background: -o-linear-gradient(50deg, #45cafc, #303f9f) !important;
   background: linear-gradient(40deg, #45cafc, #303f9f) !important;
+}
+.mr-2 {
+  margin-right: 2em;
+}
+.ml-1 {
+  margin-left: 0.5rem;
 }
 </style>

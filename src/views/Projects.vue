@@ -4,7 +4,7 @@
     <b-loading :is-full-page="isFullPage" :active.sync="isLoading"></b-loading>
     <div class="row" v-if="projects">
       <div class="item" v-for="project in projects">
-        <card :title="project.title" :content="project.desc">
+        <card :title="project.title" :content="project.desc" :repo="project.repo" :url="project.url" :tech="project.tech">
         </card>
       </div>
     </div>
