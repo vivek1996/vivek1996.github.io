@@ -22,7 +22,7 @@ export default {
       isFullPage: true,
       projects: [],
       baseUrl:
-        "https://gist.githubusercontent.com/vivek1996/896077672d438b057cca20d52cf5ed42/raw/22eee4a7da43c841f13e26460dde0e8fc657b294/projects.json"
+        "https://bitbucket.org/!api/2.0/snippets/vivek1996/MeRbeL/13efe17f0bb72eb218cfbafd71cedb6bfa773f42/files/projects.json"
     };
   },
   created: function () {
@@ -45,6 +45,7 @@ export default {
     },
     handleErrors(response) {
       if (!response.ok) {
+        this.$toast.open({ message: "Network Error", type: "is-danger" });
         throw Error(response.statusText);
       }
       return response;
