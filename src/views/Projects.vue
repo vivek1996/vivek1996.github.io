@@ -1,5 +1,5 @@
 <template>
-  <div class="projects">
+  <div class="projects container">
     <h1 class=" has-text-centered has-text-warning is-size-1 ">Projects</h1>
     <b-loading :is-full-page="isFullPage" :active.sync="isLoading"></b-loading>
     <div class="row" v-if="projects">

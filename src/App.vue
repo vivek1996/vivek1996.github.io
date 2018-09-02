@@ -3,7 +3,7 @@
     <div id="nav">
       <NavBar />
     </div>
-    <div class=" container">
+    <div>
       <!-- <transition name="page" mode="out-in">
        <router-view/>
     </transition> -->
@@ -23,7 +23,7 @@
 //   ) !important;
 // }
 html {
-  font-size: calc(100% + 0.5vw) !important;
+  font-size: calc(90% + 0.5vw) !important;
 }
 #app {
   // background-color: hsl(0, 0%, 21%);
