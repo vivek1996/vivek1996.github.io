@@ -10,7 +10,7 @@
           <p class="has-text-warning has-text-centered is-size-5">Welcome to my little place on the internet. I’m a Frontend developer</p>
           <router-link class="button has-text-weight-semibold is-danger mt-3 hvr-shutter-out-horizontal" to="/projects">Glad to meet u, have a look at my works</router-link>
           <br>
-          <a href="./../assets/Vivek_m_resume.pdf" class="button is-danger mt-3 hvr-icon-down ">
+          <a href="https://s3.ap-south-1.amazonaws.com/vivek-public/Vivek_m_resume.pdf" class="button is-danger mt-3 hvr-icon-down ">
             <i class="fas fa-file-download hvr-icon"></i>
             <span class="pl-2">Resume</span>
           </a>
