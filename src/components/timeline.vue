@@ -1,23 +1,39 @@
 <template>
     <div class="timeline">
         <timeline timeline-theme="#ffdc00">
-            <timeline-title>2018</timeline-title>
+            <timeline-title>JAN2018-AUG2018</timeline-title>
             <timeline-item bg-color="#9dd8e0">
-                <p>Graduated B.E in CS 🎓</p>
-            </timeline-item>
-            <timeline-item bg-color="#9dd8e0">
-                <small>Jan to Aug</small>
                 <p>Traniee at Edwisor 💻</p>
             </timeline-item>
-             <timeline-title bg-color="#f2d7e1">2014</timeline-title>
+            <timeline-title bg-color="#f2d7e1">B.E in COMPUTER SCIENCE(2014-2018)</timeline-title>
             <timeline-item bg-color="#ffdc00">
-                <p>student at  K.S.R Engineering college👦 </p>
+                <p>K.S.R COLLEGE OF TECHNOLOGY,TIRUCHENGODE.🎓 </p>
             </timeline-item>
-            <timeline-title bg-color="#f2d7e1">2000-2014</timeline-title>
+            <timeline-title>CERTIFICATION IN JQUERY TUTORIAL-2017</timeline-title>
+            <timeline-item bg-color="#9dd8e0">
+                <p>SOLOLEARN🎓</p>
+            </timeline-item>
+            <timeline-title>CERTIFICATION IN JAVASCRIPT TUTORIAL-2017</timeline-title>
+            <timeline-item bg-color="#9dd8e0">
+                <p>SOLOLEARN🎓</p>
+            </timeline-item>
+            <timeline-title>CERTIFICATION IN CSS FUNDAMENTALS-2017</timeline-title>
+            <timeline-item bg-color="#9dd8e0">
+                <p>SOLOLEARN🎓</p>
+            </timeline-item>
+            <timeline-title>CERTIFICATION IN HTML FUNDAMENTALS-2016</timeline-title>
+            <timeline-item bg-color="#9dd8e0">
+                <p>SOLOLEARN🎓</p>
+            </timeline-item>
+            <timeline-title bg-color="#f2d7e1">HIGH SCHOOL (2010-2014)</timeline-title>
             <timeline-item bg-color="#ffdc00">
-                <p>completed Schoolings 👦 </p>
+                <p>M.A.M SCHOOL,METTUR 👦 </p>
             </timeline-item>
-            <timeline-title bg-color="#ffdc00">1996</timeline-title>
+            <timeline-title bg-color="#f2d7e1">PREPARATORY EDUCATION (2000-2010)</timeline-title>
+            <timeline-item bg-color="#ffdc00">
+                <p>M.A.M SCHOOL,METTUR 👦 </p>
+            </timeline-item>
+            <timeline-title bg-color="#ffdc00">HELLO WORLD- 1996</timeline-title>
             <timeline-item>
                 Born 👶
             </timeline-item>
