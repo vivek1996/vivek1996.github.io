@@ -9,31 +9,21 @@
             <timeline-item bg-color="#ffdc00">
                 <p>K.S.R COLLEGE OF TECHNOLOGY,TIRUCHENGODE.🎓 </p>
             </timeline-item>
-            <timeline-title>CERTIFICATION IN JQUERY TUTORIAL-2017</timeline-title>
-            <timeline-item bg-color="#9dd8e0">
-                <p>SOLOLEARN🎓</p>
+            <timeline-title bg-color="#07b7fc">Solo Learn 🎓(2017-18)</timeline-title>
+            <timeline-item>CERTIFICATION IN JQUERY TUTORIAL-2017
             </timeline-item>
-            <timeline-title>CERTIFICATION IN JAVASCRIPT TUTORIAL-2017</timeline-title>
-            <timeline-item bg-color="#9dd8e0">
-                <p>SOLOLEARN🎓</p>
-            </timeline-item>
-            <timeline-title>CERTIFICATION IN CSS FUNDAMENTALS-2017</timeline-title>
-            <timeline-item bg-color="#9dd8e0">
-                <p>SOLOLEARN🎓</p>
-            </timeline-item>
-            <timeline-title>CERTIFICATION IN HTML FUNDAMENTALS-2016</timeline-title>
-            <timeline-item bg-color="#9dd8e0">
-                <p>SOLOLEARN🎓</p>
-            </timeline-item>
-            <timeline-title bg-color="#f2d7e1">HIGH SCHOOL (2010-2014)</timeline-title>
+            <timeline-item>CERTIFICATION IN JAVASCRIPT TUTORIAL-2017</timeline-item>
+            <timeline-item>CERTIFICATION IN CSS FUNDAMENTALS-2017</timeline-item>
+            <timeline-item>CERTIFICATION IN HTML FUNDAMENTALS-2016</timeline-item>
+            <timeline-title bg-color="#07b7fc">HIGH SCHOOL (2010-2014)</timeline-title>
             <timeline-item bg-color="#ffdc00">
                 <p>M.A.M SCHOOL,METTUR 👦 </p>
             </timeline-item>
-            <timeline-title bg-color="#f2d7e1">PREPARATORY EDUCATION (2000-2010)</timeline-title>
+            <timeline-title bg-color="#07b7fc">PREPARATORY EDUCATION (2000-2010)</timeline-title>
             <timeline-item bg-color="#ffdc00">
                 <p>M.A.M SCHOOL,METTUR 👦 </p>
             </timeline-item>
-            <timeline-title bg-color="#ffdc00">HELLO WORLD- 1996</timeline-title>
+            <timeline-title>HELLO WORLD- 1996</timeline-title>
             <timeline-item>
                 Born 👶
             </timeline-item>
@@ -50,10 +40,10 @@ export default {
 </script>
 <style lang="scss" scoped>
 .timeline p {
-  color: white;
+  color: #ffffff;
 }
 .timeline-title {
-  color: rgb(219, 20, 80) !important;
+  color: rgb(255, 220, 0) !important;
   font-size: 2rem;
 }
 .timeline-item {
