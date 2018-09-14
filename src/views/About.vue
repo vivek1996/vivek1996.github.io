@@ -134,7 +134,7 @@
 }
 </style>
 <script>
-import Time from "@/components/timeline.vue";
+import Time from "@/components/Timeline.vue";
 export default {
   data: function () {
     return {

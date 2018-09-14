@@ -1,23 +1,29 @@
 <template>
     <div class="timeline">
         <timeline timeline-theme="#ffdc00">
-            <timeline-title>2018</timeline-title>
+            <timeline-title>JAN2018-AUG2018</timeline-title>
             <timeline-item bg-color="#9dd8e0">
-                <p>Graduated B.E in CS 🎓</p>
-            </timeline-item>
-            <timeline-item bg-color="#9dd8e0">
-                <small>Jan to Aug</small>
                 <p>Traniee at Edwisor 💻</p>
             </timeline-item>
-             <timeline-title bg-color="#f2d7e1">2014</timeline-title>
+            <timeline-title bg-color="#f2d7e1">B.E in COMPUTER SCIENCE(2014-2018)</timeline-title>
             <timeline-item bg-color="#ffdc00">
-                <p>student at  K.S.R Engineering college👦 </p>
+                <p>K.S.R COLLEGE OF TECHNOLOGY,TIRUCHENGODE.🎓 </p>
             </timeline-item>
-            <timeline-title bg-color="#f2d7e1">2000-2014</timeline-title>
+            <timeline-title bg-color="#07b7fc">Solo Learn 🎓(2017-18)</timeline-title>
+            <timeline-item>CERTIFICATION IN JQUERY TUTORIAL-2017
+            </timeline-item>
+            <timeline-item>CERTIFICATION IN JAVASCRIPT TUTORIAL-2017</timeline-item>
+            <timeline-item>CERTIFICATION IN CSS FUNDAMENTALS-2017</timeline-item>
+            <timeline-item>CERTIFICATION IN HTML FUNDAMENTALS-2016</timeline-item>
+            <timeline-title bg-color="#07b7fc">HIGH SCHOOL (2010-2014)</timeline-title>
             <timeline-item bg-color="#ffdc00">
-                <p>completed Schoolings 👦 </p>
+                <p>M.A.M SCHOOL,METTUR 👦 </p>
             </timeline-item>
-            <timeline-title bg-color="#ffdc00">1996</timeline-title>
+            <timeline-title bg-color="#07b7fc">PREPARATORY EDUCATION (2000-2010)</timeline-title>
+            <timeline-item bg-color="#ffdc00">
+                <p>M.A.M SCHOOL,METTUR 👦 </p>
+            </timeline-item>
+            <timeline-title>HELLO WORLD- 1996</timeline-title>
             <timeline-item>
                 Born 👶
             </timeline-item>
@@ -34,10 +40,10 @@ export default {
 </script>
 <style lang="scss" scoped>
 .timeline p {
-  color: white;
+  color: #ffffff;
 }
 .timeline-title {
-  color: rgb(219, 20, 80) !important;
+  color: rgb(255, 220, 0) !important;
   font-size: 2rem;
 }
 .timeline-item {
